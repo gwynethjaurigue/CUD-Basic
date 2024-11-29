@@ -124,6 +124,122 @@ img {
   margin: 0 auto;
 }
 
+/* HEADER */
+.header{
+  background:var(--dark);
+  position:fixed;
+  width:100%;
+  z-index:999;
+
+}
+.header .header__nav ul{
+  display:flex;
+}
+.header .header__nav ul li{
+  background:var(--dark);
+  padding:2rem;
+}
+.header .header__nav ul li a{
+  color:var(--light);
+}
+.header .header__nav ul li:hover{
+  background:var(--transparent);
+  border-radius:1rem;
+  }
+.header .header__nav ul li:hover a {
+  color:var(--primary);
+}
+.header .header__wrapper{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+/* BANNER  */
+.banner{
+  background-image: url();
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:center;
+  display:flex;
+  height:88vh;
+  align-items:center;  
+  justify-content:center;
+  background:var(--light);
+}
+.banner h2{
+  color:var(--primary);
+  font-size:100px;
+  max-width:80rem;
+  font-weight:bold;
+  text-align: baseline;
+
+}
+.banner p{
+  font-size:2rem;
+  text-align: left;
+}
+.banner .banner__btn{
+  display:flex;
+  gap:5rem;
+  margin-top: 5rem;
+  justify-content: baseline;
+  color:var(--primary);
+}
+.banner .banner__btn a{
+  width:20rem;
+  color:var(--dark);
+}
+
+/* CONTACT */
+.contact{
+  padding:5rem 0;
+  background-color: var(--dark);
+}
+.contact h2{
+  font-size:7rem;
+  font-weight:100;
+ color: var(--primary);
+ padding-top: 5rem;
+}
+.contact p{
+  color:var(--light);
+}
+.contact .contact__wrapper{
+  display:flex;
+  grid-template-columns:50% 50%;
+  grid-gap:10rem;
+  transform:translateY(10rem);
+  flex-direction: row-reverse;
+  width:50rem;
+  align-items: center;
+}
+.contact form{
+ padding:3rem;
+ display:flex;
+ flex-direction:column;
+ gap:2rem;
+ border-radius:2rem;
+ align-items:right;
+}
+.contact form input{
+  height:5rem;
+  padding:0 3rem;
+}
+.contact form textarea{
+  padding:1rem 3rem;
+  resize:none;
+  min-height:300px;
+}
+.contact table tr{
+  height:8rem;
+  color:var(--light)
+}
+.contact table tr td:first-child{
+  width:5rem;
+  font-size:3rem;
+  color:var(--light);
+}
 /*REPEATABLE PATTERNS*/
 :root {
   --primary: #ffa700;
